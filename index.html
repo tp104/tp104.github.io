@@ -1,7 +1,82 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>First Webpage</title>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body{
+			 font-size: 20px;
+			 font-family: sans-serif;
+		}
+		h1 {
+			box-sizing: border-box;
+			margin: 10px 10px 20px 10px;
+			padding: 0px;
+			border: 10px black solid;
+			font-family: sans-serif;
+			font-size: 50px;
+			text-align: center;
+
+			color: blue;
+		}
+		h1:hover {
+			color: red;
+			cursor: pointer;
+		}
+		#goals {
+			color: red;
+		}
+		a {
+			border: 4px;
+			background: cyan;
+		}
+		div a:hover{
+			color: blue;
+		}
+		footer a:hover{
+			color: green;
+		}
+		ul > li{
+			color: orange;
+		}
+		ol > li{
+			color: green;
+		}
+		ul li:nth-child(2) ol li:nth-child(4){
+			color: red;
+			cursor: progress;
+			background: yellow;
+			width: 200px;
+		}
+		ul > li:nth-child(2) > ol > li:nth-child(4):hover{
+			background: green;
+			color: red;
+		}
+	</style>
+
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<h1>Hello World!</h1>
+<div><a href="next.html">You want to check out next page?</a></div>
+<h2 id="goals">GOALS :</h2>
+<ul>
+	<li>Short term
+		<ol>
+			<li>acquire webdev skills by sep 7th</li>
+			<li>start freelancing</li>
+			<li>invest 1 lk by 4th yr</li>
+		</ol>
+	</li>
+	<li>Long term
+		<ol>
+			<li>make it Big!</li>
+			<li>marry a wonderful women</li>
+			<li>help family</li>
+			<li>make 1000 cr by 50</li>
+			<li>dont forget to ENJOY</li>
+		</ol>
+	</li>
+</ul>
+<footer>ps: I'm hosted with <a href="https://github.com/" title="GitHub" target="_blank">GitHub&trade; Pages</a> .</footer>
 </body>
 </html>
